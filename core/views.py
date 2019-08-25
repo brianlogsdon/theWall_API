@@ -40,7 +40,7 @@ class UserList(APIView):
 
 class MessagesViewSet(viewsets.ModelViewSet):
    
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    permission_classes = (permissions.AllowAny,)
     
     """
     API endpoint that allows groups to be viewed or edited.
